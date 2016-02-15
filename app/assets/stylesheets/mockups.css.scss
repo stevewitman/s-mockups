@@ -1,0 +1,27 @@
+$color-nav-background: #000000;
+
+nav.navbar.navbar-inverse {
+	border-radius: 0px;
+	background-color: $color-nav-background;
+}
+
+.description {
+	.media {
+    border: 3px solid #55aa55;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #eee;
+    position: relative;
+    .time {
+	    position: absolute;
+	    top: 8px;
+	    right: 8px;
+	    color: #55aa55;
+		}
+
+	  &:hover {
+	    cursor: pointer;
+	    background-color: #ddd;
+		}
+	}
+}

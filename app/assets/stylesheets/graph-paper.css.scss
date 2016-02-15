@@ -1,0 +1,24 @@
+$trans: transparent;
+$block: #f8fff8;
+$line: #88ee88;
+$gridSize: 100px;
+$subdivisions: 5;
+$lineAlpha: .7;
+$sublineAlpha: .5;
+
+body {
+  background-color: $block;
+  background-image:
+    linear-gradient(rgba($line,$sublineAlpha) 1px, $trans 1px), /*sub horiz*/
+    linear-gradient($line 1px, $trans 1px), /*main horiz*/
+    linear-gradient(90deg, rgba($line,$sublineAlpha) 1px, $trans 1px), /*sub vert*/
+    linear-gradient(90deg, rgba($line,$lineAlpha) 1px, $trans 1px), /*main vert*/
+    ;
+  background-size:
+    $gridSize / $subdivisions $gridSize / $subdivisions,
+    $gridSize $gridSize,
+    $gridSize / $subdivisions $gridSize / $subdivisions,
+    $gridSize $gridSize,
+    $gridSize $gridSize,
+    $gridSize $gridSize;
+}
